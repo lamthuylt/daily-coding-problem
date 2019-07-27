@@ -19,5 +19,5 @@ def check_sum_pair(liste, k):
 	
 if __name__ == '__main__':
     liste = [10, -15, 3, 7]
-	k = 17
+    k = 17
     print('Check sum: {}'.format(check_sum_pair(liste,k)))
