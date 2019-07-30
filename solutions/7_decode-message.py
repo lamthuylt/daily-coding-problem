@@ -16,7 +16,7 @@ def count_decode(message):
         
     def decode(message, nb_ways):
         if count_digits(message) <= 2:
-            if message[0]!='0' and message>='1' and message<='10':  # '0' or 'Ox' are not decodable
+            if message[0]!='0' and message>='1' and message<='10':  # '0' and 'Ox' are not decodable
                 nb_ways += 1
             elif message>='11' and message<='26':                   
                 nb_ways += 2
