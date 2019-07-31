@@ -8,7 +8,7 @@
 #7 - decode message [[solution]](solutions/7_decode-message.py)\
 #8 -\
 #9 -\
-#10 -\
+#10 - 
 
 
 
