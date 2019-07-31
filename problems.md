@@ -21,7 +21,7 @@
 
 
 
-# Problems
+# Problem description
 
 ### Problem #1 [Easy] 
 This problem was recently asked by Google.
