@@ -1,11 +1,11 @@
 # Index
-[#1 - check pair sum up to a value](#problem-1-easy) [[solution]](solutions/1_check-sum-pair-in-array.py)\
+#1 - [check pair sum up to a value](#problem-1-easy) [[solution]](solutions/1_check-sum-pair-in-array.py)\
 #2 - [product array](#problem-2-hard) [[solution]](solutions/2_product-array.py)\
-#3 - serialize deserialize binary tree [[solution]](solutions/3_serialize-deserialize-binary-tree.py)\
+#3 - [serialize deserialize binary tree](#problem-3-medium) [[solution]](solutions/3_serialize-deserialize-binary-tree.py)\
 #4 -\
 #5 -\
 #6 -\
-#7 - decode message [[solution]](solutions/7_decode-message.py)\
+#7 - [decode message](#problem-7-medium) [[solution]](solutions/7_decode-message.py)\
 #8 -\
 #9 -\
 #10 -\
