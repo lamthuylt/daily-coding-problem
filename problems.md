@@ -1,6 +1,6 @@
 # Index
 [#1 - check pair sum up to a value](#problem-1-easy) [[solution]](solutions/1_check-sum-pair-in-array.py)\
-#2 - product array [[solution]](solutions/2_product-array.py)\
+#2 - [product array](#problem-2-hard) [[solution]](solutions/2_product-array.py)\
 #3 - serialize deserialize binary tree [[solution]](solutions/3_serialize-deserialize-binary-tree.py)\
 #4 -\
 #5 -\
