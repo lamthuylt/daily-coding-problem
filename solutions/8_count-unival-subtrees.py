@@ -16,12 +16,12 @@ For example, the following tree has 5 unival subtrees:
 '''
 
 class Node:
+
     def __init__(self, val, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
-    
-    
+
 
     def count_unival_subtrees(self):
         
@@ -36,19 +36,30 @@ class Node:
                 return is_unival_tree(root.right)
             elif root.left!=None and root.right!=None and root.val==root.left.val==root.right.val:
                 return is_unival_tree(root.left) and is_unival_tree(root.right)
-            
+
+        def increment_count_unival_subtrees(root, count):
+            if root!=None and is_unival_tree(root):
+                count += 1               
+            if root.left!=None:
+                count = increment_count_unival_subtrees(root.left, count)
+            if root.right!=None:
+                count = increment_count_unival_subtrees(root.right, count)
+            return count
         
-#        count = 0
-#        if root!=None and is_unival_tree(root):
-#            count += 1               
-#        if 
-            
-        return is_unival_tree(self)
+        count = 0
+        return increment_count_unival_subtrees(self, count)
            
         
 
 if __name__ == '__main__':
     root = Node(0, Node(1), Node(0,Node(1,Node(1),Node(1)),Node(0))) 
-    #root = Node(1, Node(1), Node(1,Node(1,Node(1),Node(1)),Node(1))) 
-    print(root.count_unival_subtrees())
-        
+    print("Number of unival subtrees: {}".format(root.count_unival_subtrees()))
+    """
+       0
+      /  \
+     (1)  0
+        /   \
+       (1)   (0)
+      /   \
+     (1)  (1)
+   """     
