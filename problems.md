@@ -3,12 +3,12 @@
 #2 - [product array](#problem-2-hard) [[solution]](solutions/2_product-array.py)\
 #3 - [serialize deserialize binary tree](#problem-3-medium) [[solution]](solutions/3_serialize-deserialize-binary-tree.py)\
 #4 - [find the lowest missing positive int](#problem-4-hard)\
-#5 -\ 
+#5 - \ 
 #6 - [XOR linked list](#problem-6-hard)\
 #7 - [decode message](#problem-7-medium) [[solution]](solutions/7_decode-message.py)\
 #8 - [count unival subtrees](#problem-8-easy)\
 #9 - [largest sum of non adjacent numbers](#problem-9-hard)\
-#10 -\
+#10 - \
 #11 - 
 
 
@@ -99,6 +99,6 @@ Implement a job scheduler which takes in a function f and an integer n, and call
 
 ### Problem #11 [Medium]
 This problem was asked by Twitter.\
-Implement an autocomplete system. That is, given a query string s and a set of all possible query strings, return all strings in the set that have s as a prefix.
-For example, given the query string de and the set of strings [dog, deer, deal], return [deer, deal].\
-Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.\
+Implement an autocomplete system. That is, given a query string s and a set of all possible query strings, return all strings in the set that have `s` as a prefix.
+For example, given the query string `de` and the set of strings [`dog`, `deer`, `deal`], return [`deer`, `deal`].\
+Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
