@@ -24,7 +24,7 @@ class Node:
 
 
     def count_unival_subtrees(self):
-        
+        # Method 1
         def is_unival_tree(root):                    
             if (root.left!=None and root.val!=root.left.val) or (root.right!=None and root.val!=root.right.val):
                 return False  
@@ -48,8 +48,11 @@ class Node:
         
         count = 0
         return increment_count_unival_subtrees(self, count)
-           
-        
+    
+    def count_unival_subtrees_2(self):
+        # Method 2
+        # This method is based on the remark that all the nodes of a unival subtree are roots of other unival subtrees
+        return 0
 
 if __name__ == '__main__':
     root = Node(0, Node(1), Node(0,Node(1,Node(1),Node(1)),Node(0))) 
