@@ -2,14 +2,14 @@
 - [x] [#1 Check pair sum up to a value](#problem-1-easy) [[solution]](solutions/1_check-sum-pair-in-array.py)
 - [x] [#2 Product array](#problem-2-hard) [[solution]](solutions/2_product-array.py)
 - [x] [#3 Serialize deserialize binary tree](#problem-3-medium) [[solution]](solutions/3_serialize-deserialize-binary-tree.py)
-- [] [#4 Find the lowest missing positive int](#problem-4-hard)
-* [#5](#problem-5-medium)
-* [#6 XOR linked list](#problem-6-hard)
-* [#7 Decode message](#problem-7-medium) [[solution]](solutions/7_decode-message.py)
-* [#8 Count unival subtrees](#problem-8-easy) [[solution]](solutions/8_count-unival-subtrees.py)
-* [#9 Largest sum of non adjacent numbers](#problem-9-hard)
-* [#10](#problem-10-medium)
-* [#11](#problem-11-medium) 
+- [ ] [#4 Find the lowest missing positive int](#problem-4-hard)
+- [ ] [#5](#problem-5-medium)
+- [ ] [#6 XOR linked list](#problem-6-hard)
+- [x] [#7 Decode message](#problem-7-medium) [[solution]](solutions/7_decode-message.py)
+- [x] [#8 Count unival subtrees](#problem-8-easy) [[solution]](solutions/8_count-unival-subtrees.py)
+- [ ] [#9 Largest sum of non adjacent numbers](#problem-9-hard)
+- [ ] [#10](#problem-10-medium)
+- [ ] [#11](#problem-11-medium) 
 
 
 
