@@ -79,6 +79,21 @@ class Node:
                 if root.right != None:                    
                     count = increment_count(root.right, count)
                 return count
+           
+        # BUG (line 94 is looped twice for UNKNOWN REASON)   
+        """
+        def increment_count(root, count):
+            nb_nodes = 0
+            is_unival, nb_nodes = is_unival_tree_and_count_nodes(root, nb_nodes)
+            if is_unival == True:
+                return nb_nodes
+            else:
+                if root.left != None:                
+                    count += increment_count(root.left, count)
+                if root.right != None:
+                    count += increment_count(root.right, count)
+                return count
+        """
         
         count = 0
         return increment_count(self, count)
