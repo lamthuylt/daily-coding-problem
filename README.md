@@ -1,8 +1,6 @@
-### Introduction
-This repository contains my solutions for [Daily Coding Problem](https://www.dailycodingproblem.com/).
-Written in **Python**. 
+# Repository organisation
+This repository contains my solutions for [Daily Coding Problem](https://www.dailycodingproblem.com/), written in **Python**.
 
-### Repository organisation
 The repository is organised as follow: 
 * [problems.md](problems.md): list and description of problems
 * [solutions](solutions): self-implemented solutions for almost problems
