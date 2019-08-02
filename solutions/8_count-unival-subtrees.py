@@ -72,20 +72,20 @@ class Node:
             nb_nodes = 0
             is_unival, nb_nodes = is_unival_tree_and_count_nodes(root, nb_nodes)
             if is_unival == True:
-                return nb_nodes
+                return count+nb_nodes
             else:
                 if root.left != None:                
-                    count += increment_count(root.left, count)
-                if root.right != None:
-                    count += increment_count(root.right, count)
-            return count
+                    count = increment_count(root.left, count)
+                if root.right != None:                    
+                    count = increment_count(root.right, count)
+                return count
         
         count = 0
         return increment_count(self, count)
     
 if __name__ == '__main__':
     root = Node(0, Node(1), Node(0,Node(1,Node(1),Node(1)),Node(0))) 
-    root = Node(1, Node(1), Node(1,Node(1,Node(1),Node(1)),Node(1))) 
+    #root = Node(1, Node(1), Node(1,Node(1,Node(1),Node(1)),Node(1))) 
     print("Number of unival subtrees (method 1): {}".format(root.count_unival_subtrees()))
     print("Number of unival subtrees (method 2): {}".format(root.count_unival_subtrees_2()))
     """
