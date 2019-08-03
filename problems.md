@@ -7,7 +7,7 @@
 - [ ] [#6 XOR linked list](#problem-6-hard)
 - [x] [#7 Decode message](#problem-7-medium) [[solution]](solutions/7_decode-message.py)
 - [x] [#8 Count unival subtrees](#problem-8-easy) [[solution]](solutions/8_count-unival-subtrees.py)
-- [ ] [#9 Largest sum of non adjacent numbers](#problem-9-hard)
+- [ ] [#9 Largest non adjacent sum](#problem-9-hard)
 - [ ] [#10](#problem-10-medium)
 - [ ] [#11](#problem-11-medium) 
 
