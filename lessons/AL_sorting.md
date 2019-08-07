@@ -3,10 +3,10 @@
 ### Bubble sort
 Bubble the largest element up to the highest index of the array, then bubble the second largest element up to the second highest index, and so on.
 
-<p align="center">
+ <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="{{ include description }}">
   source: https://en.wikipedia.org/wiki/Bubble_sort
-</p>
+</figure>
 
 
 ```
