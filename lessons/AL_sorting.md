@@ -3,17 +3,10 @@
 ### Bubble sort
 Bubble the largest element up to the highest index of the array, then bubble the second largest element up to the second highest index, and so on.
 
-.center[
 
-![My image](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
-
-.caption[
-**Fig. 1:** Image caption
-]
-
-]
 
 ![example](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+*image caption*
 ```
 def bubble_sort(arr):
     for k in range(len(arr)-1,0,-1):       
