@@ -9,7 +9,7 @@ Bubble the largest element up to the highest index of the array, then bubble the
 </figure>
 
 
-```
+```python
 def bubble_sort(arr):
     for k in range(len(arr)-1,0,-1):       
         flag = 1   
