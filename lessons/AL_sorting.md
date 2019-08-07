@@ -6,6 +6,10 @@ Bubble the largest element up to the highest index of the array, then bubble the
 
 
 ![example](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="Sublime's custom image"/>
+</p>
 *image caption*
 ```
 def bubble_sort(arr):
