@@ -8,6 +8,8 @@ Bubble the largest element up to the highest index of the array, then bubble the
   __figure source__: https://en.wikipedia.org/wiki/Bubble_sort
 </figure>
 
+ __*italique souligné*__
+
 
 ```python
 def bubble_sort(arr):
