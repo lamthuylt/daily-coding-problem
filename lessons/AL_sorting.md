@@ -4,14 +4,12 @@
 Bubble the largest element up to the highest index of the array, then bubble the second largest element up to the second highest index, and so on.
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="Sublime's custom image"/>
-  image caption
-</p>
-
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="{{ include description }}">
-  <figcaption>{{ include description }}</figcaption>
+  <figcaption>{{source: https://en.wikipedia.org/wiki/Bubble_sort}}</figcaption>
 </figure>
+</p>
+
 
 ```
 def bubble_sort(arr):
