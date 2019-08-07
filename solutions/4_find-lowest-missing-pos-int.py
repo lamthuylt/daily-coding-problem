@@ -33,10 +33,26 @@ def lowest_positive_missing_2(arr):
     Method 2 - O(nlogn) 
     We use sorting beforehand (O(nlogn)) then do a linear scan of the array (O(n)). 
     '''
-    def sort_array(arr):
+    def bubble_sort(arr):
+        # bubble the largest element up to the highest index of the array, then bubble 
+        # the second largest element up to the second highest index, and so on
+        # O(n^2)
+        for k in range(len(arr)-1,0,-1):       
+            flag = 1   
+            print(arr)
+            for i in range(k):
+                if arr[i] > arr[i+1]:
+                    # swap the two adjacent elements if they are not increasingly sorted yet
+                    temp = arr[i]
+                    arr[i] = arr[i+1]
+                    arr[i+1] = temp
+                    flag = 0
+            if flag == 1:
+                # if we go through a pass without swapping, the array is already sorted
+                break
         return arr
             
-    sorted_arr = sort_array(arr)            
+    sorted_arr = bubble_sort(arr)            
     missing = 1
     index = 0
     while index < len(sorted_arr):
@@ -51,8 +67,8 @@ def lowest_positive_missing_2(arr):
     
 if __name__ == "__main__":
     arr = [3, 4, -1, 1]
-    arr = [1, 2, 0]
-    arr = [-1, -1, 2, 5]
+    #arr = [2, 3, 4, -1]
+    #arr = [1, 2, 0]
     print('Method 1: {}'.format(lowest_positive_missing_1(arr)))
     print('Method 2: {}'.format(lowest_positive_missing_2(arr)))
     
