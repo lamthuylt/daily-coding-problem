@@ -3,10 +3,6 @@
 ### Bubble sort
 Bubble the largest element up to the highest index of the array, then bubble the second largest element up to the second highest index, and so on.
 
-
-
-![example](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
-
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="Sublime's custom image"/>
 </p>
