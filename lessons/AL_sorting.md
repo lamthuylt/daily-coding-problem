@@ -28,4 +28,10 @@ def bubble_sort(arr):
 ```
 * Time complexity: O(n^2)
  
+### Insertion sort
+
+ <figure class="image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" alt="{{ include description }}">
+  figure source: https://en.wikipedia.org/wiki/Insertion_sort
+</figure>
 
