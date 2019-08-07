@@ -5,7 +5,7 @@ Bubble the largest element up to the highest index of the array, then bubble the
 
  <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="{{ include description }}">
-  source: https://en.wikipedia.org/wiki/Bubble_sort
+  figure: https://en.wikipedia.org/wiki/Bubble_sort
 </figure>
 
 
