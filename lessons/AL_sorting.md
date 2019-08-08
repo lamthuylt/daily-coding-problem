@@ -27,7 +27,7 @@ def bubble_sort(arr):
 	return arr
 ```
 
-* Time complexity: O($n^2$)
+* Time complexity: O($ n^2 $)
 * Space complexity: in-place
  
 ### Insertion sort
