@@ -10,6 +10,7 @@
 - [ ] [#9 Largest non adjacent sum](#problem-9-hard)
 - [ ] [#10](#problem-10-medium)
 - [ ] [#11](#problem-11-medium) 
+- [ ] [#12](#problem-12-hard) 
 
 
 
@@ -31,7 +32,7 @@ Follow-up: what if you can't use division?
 This problem was asked by Google.\
 Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and deserialize(s), which deserializes the string back into the tree.\
 For example, given the following Node class
-```
+```python
 class Node:
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -39,7 +40,7 @@ class Node:
         self.right = right
 ```
 The following test should pass:
-```
+```python
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
@@ -53,7 +54,7 @@ For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should g
 This problem was asked by Jane Street.\
 cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.\
 Given this implementation of cons:
-```
+```python
 def cons(a, b):
     def pair(f):
         return f(a, b)
@@ -102,3 +103,14 @@ This problem was asked by Twitter.\
 Implement an autocomplete system. That is, given a query string s and a set of all possible query strings, return all strings in the set that have `s` as a prefix.
 For example, given the query string `de` and the set of strings [`dog`, `deer`, `deal`], return [`deer`, `deal`].\
 Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
+
+### Problem #12 [Hard]
+This problem was asked by Amazon.\
+There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase. The order of the steps matters.\
+For example, if N is 4, then there are 5 unique ways:
+* 1, 1, 1, 1
+* 2, 1, 1
+* 1, 2, 1
+* 1, 1, 2
+* 2, 2
+What if, instead of being able to climb 1 or 2 steps at a time, you could climb any number from a set of positive integers X? For example, if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time.
