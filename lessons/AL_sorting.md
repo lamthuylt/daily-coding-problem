@@ -1,15 +1,15 @@
 # Sorting algorithms
 
 ### Bubble sort
-Bubble the largest element up to the highest index of the array, then bubble the second largest element up to the second highest index, and so on.
+This algorithm consists in repeatedly scanning through the list, and swapping each pair of adjacent elements if they are not in the right order (increasing or decreasing to be defined).
+This procedure is repeated until no more swap is required, meaning that the array is sorted. The name "bubble" comes from the way larger or smaller ellements bubble up to the top of the list.\
 
- <figure class="image">
+Example:
+
+<figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="{{ include description }}">
-  figure source: https://en.wikipedia.org/wiki/Bubble_sort
+  figure source: https://en.wikipedia.org/wiki/Bubble_sort\
 </figure>
-
-
-
 
 ```python
 def bubble_sort(arr):
@@ -27,10 +27,12 @@ def bubble_sort(arr):
 	return arr
 ```
 * Time complexity: O(n^2)
+* Space complexity: in-place
+ 
  
 ### Insertion sort
 
- <figure class="image">
+<figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" alt="{{ include description }}">
   figure source: https://en.wikipedia.org/wiki/Insertion_sort
 </figure>
