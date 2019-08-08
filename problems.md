@@ -104,6 +104,7 @@ Implement an autocomplete system. That is, given a query string s and a set of a
 For example, given the query string `de` and the set of strings [`dog`, `deer`, `deal`], return [`deer`, `deal`].\
 Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
 
+
 ### Problem #12 [Hard]
 This problem was asked by Amazon.\
 There exists a staircase with N steps, and you can climb up either 1 or 2 steps at a time. Given N, write a function that returns the number of unique ways you can climb the staircase. The order of the steps matters.\
