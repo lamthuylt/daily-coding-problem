@@ -8,7 +8,7 @@ a+1=2
 
 ### Bubble sort
 
-This algorithm consists in repeatedly scanning through the list, and swapping each pair of adjacent elements if they are not in the right order (increasing or decreasing to be defined). This procedure is repeated until no more swap is required, meaning that the array is sorted. The name "bubble" comes from the way larger or smaller ellements bubble up to the top of the list.
+This algorithm consists in repeatedly scanning through the list, and swapping each pair of adjacent elements if they are not in the right order (increasing/ decreasing). By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the array is sorted. 
 
 Example:
 
