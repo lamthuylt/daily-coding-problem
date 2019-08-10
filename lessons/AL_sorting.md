@@ -1,6 +1,6 @@
 # Sorting algorithms
 
-### Bubble sort
+## Bubble sort
 
 This algorithm consists in repeatedly scanning through the list, comparing each pair of adjacent elements, and swapping them if they are in the wrong order. By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the list is sorted. 
 
@@ -33,12 +33,12 @@ def bubble_sort(arr):
  
 
 
-### Selection sort
+## Selection sort
 
 Example:
 <figure class="image">
-  <img src="https://algorithms.tutorialhorizon.com/selection-sort-java-implementation/selection-sort-gif/" alt="{{ include description }}">
-  figure source: https://algorithms.tutorialhorizon.com/selection-sort-java-implementation/selection-sort-gif/
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif" alt="{{ include description }}">
+  figure source: https://en.wikipedia.org/wiki/Selection_sort
 </figure>
 
 ```python
