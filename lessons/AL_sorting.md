@@ -4,11 +4,9 @@
 
 This algorithm consists in repeatedly scanning through the list, comparing each pair of adjacent elements, and swapping them if they are in the wrong order. By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the list is sorted. 
 
-Example:
-
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="{{ include description }}">
-  figure source: https://en.wikipedia.org/wiki/Bubble_sort
+  Figure: Red is current pair of adjacent elements. Black is sorted list. (source: https://en.wikipedia.org/wiki/Bubble_sort)
 </figure>
 
 ```python
@@ -35,10 +33,9 @@ def bubble_sort(arr):
 
 ## Selection sort
 
-Example:
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif" alt="{{ include description }}">
-  figure source: https://en.wikipedia.org/wiki/Selection_sort
+  Figure: Red is current min. Yellow is sorted list. Blue is current item. (source: https://en.wikipedia.org/wiki/Selection_sort)
 </figure>
 
 ```python
