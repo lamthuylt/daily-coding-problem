@@ -15,16 +15,17 @@ Example:
 def bubble_sort(arr):
     for k in range(len(arr)-1,0,-1):       
         flag = 1   
-	print(arr)
-	for i in range(k):
-	    if arr[i] > arr[i+1]:   # swap each pair of adjacent elements if they are not in increasing order
-	    temp = arr[i]
-	    arr[i] = arr[i+1]
-	    arr[i+1] = temp
-	    flag = 0
-	if flag == 1:               # if we go through a pass without swapping, the array is already sorted
-	    break
-	return arr
+        # swap each pair of adjacent elements if they are not in increasing order
+        for i in range(k):
+            if arr[i] > arr[i+1]:   
+                temp = arr[i]
+                arr[i] = arr[i+1]
+                arr[i+1] = temp
+                flag = 0
+        # if we go through a pass without swapping, the array is already sorted
+        if flag == 1:               
+            break
+    return arr
 ```
 
 * Time complexity: O(n^2)
