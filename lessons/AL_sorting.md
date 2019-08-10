@@ -1,14 +1,8 @@
-<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-```math
-a+1=2
-```
-\\[ {x}_{1,2}=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\]
-
 # Sorting algorithms
 
 ### Bubble sort
 
-This algorithm consists in repeatedly scanning through the list, and swapping each pair of adjacent elements if they are not in the right order (increasing/ decreasing). By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the array is sorted. 
+This algorithm consists in repeatedly scanning through the list, comparing each pair of adjacent elements, and swapping them if they are in the wrong order. By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the list is sorted. 
 
 Example:
 
@@ -33,9 +27,42 @@ def bubble_sort(arr):
 	return arr
 ```
 
-* Time complexity: O($ n^2 $)
+* Time complexity: O(n^2)
 * Space complexity: in-place
  
+
+
+### Selection sort
+
+Example:
+<figure class="image">
+  <img src="https://algorithms.tutorialhorizon.com/selection-sort-java-implementation/selection-sort-gif/" alt="{{ include description }}">
+  figure source: https://algorithms.tutorialhorizon.com/selection-sort-java-implementation/selection-sort-gif/
+</figure>
+
+```python
+def selection_sort(arr):
+    for i in range(len(arr)-1):                   
+        # find index of minimum element from i till n-1
+        iMin = i
+        for j, num in enumerate(arr[i+1:]):                
+            if num < arr[iMin]:
+                iMin = i+j+1
+        # swap ith element and minimum element 
+        if iMin != i:
+            temp = arr[i]
+            arr[i] = arr[iMin]
+            arr[iMin] = temp
+        print(arr)
+    return arr
+```
+
+* Time complexity: O(n^2)
+* Space complexity: in-place
+
+
+
+
 ### Insertion sort
 
 <figure class="image">
