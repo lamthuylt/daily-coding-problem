@@ -75,7 +75,7 @@ def selection_sort(arr):
 ## Insertion sort
 
 #### Algorithm
-Insertion sort also divides the list into 2 sublists: sorted sublist, which initially contains the first element in the list and is built up from left to right, and unsorted sublist, which contains initially the remaining elements. The algorithm proceeds by picking one element from the unsorted sublist at a time, finding the location it belongs within the sorted sublist, and inserting it there. The procedure repeats until the unsorted sublist is empty.  
+Insertion sort divides the list into 2 sublists: sorted sublist, which initially contains the first element in the list and is built up from left to right, and unsorted sublist, which initially contains the remaining elements. The algorithm proceeds by picking one element from the unsorted sublist at a time, finding the location it belongs within the sorted sublist, and inserting it there. The procedure repeats until the unsorted sublist is empty.  
 
 #### Illustration
 <figure class="image">
