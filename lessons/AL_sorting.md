@@ -2,14 +2,16 @@
 
 ## Bubble sort
 
+#### Definition
 This algorithm consists in repeatedly scanning through the list, comparing each pair of adjacent elements, and swapping them if they are in the wrong order. By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the list is sorted. 
 
+#### Example
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="{{ include description }}">
-  Figure: Red is current pair of adjacent elements. Black is sorted list. (source: https://en.wikipedia.org/wiki/Bubble_sort)
+  Figure: Red is current pair of adjacent elements. Black is sorted sub-list. (source: https://en.wikipedia.org/wiki/Bubble_sort)
 </figure>
 
-
+#### Implementation
 ```python
 def bubble_sort(arr):
     for k in range(len(arr)-1,0,-1):       
@@ -27,6 +29,7 @@ def bubble_sort(arr):
     return arr
 ```
 
+#### Analyse
 * Time complexity: O(n^2)
 * Space complexity: in-place
  
