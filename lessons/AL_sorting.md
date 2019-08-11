@@ -9,6 +9,7 @@ This algorithm consists in repeatedly scanning through the list, comparing each 
   Figure: Red is current pair of adjacent elements. Black is sorted list. (source: https://en.wikipedia.org/wiki/Bubble_sort)
 </figure>
 
+
 ```python
 def bubble_sort(arr):
     for k in range(len(arr)-1,0,-1):       
@@ -60,11 +61,28 @@ def selection_sort(arr):
 
 
 
-
-### Insertion sort
+## Insertion sort
 
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" alt="{{ include description }}">
   figure source: https://en.wikipedia.org/wiki/Insertion_sort
 </figure>
 
+```python
+def insertion_sort(arr):
+    ''' O(n^2) '''
+    for iUnsorted in range(1,len(arr)):
+        val = arr[iUnsorted]   
+        for iSorted in range(iUnsorted-1, -1, -1):
+            # shift numbers greater than val to the right
+            if arr[iSorted] > val:
+                arr[iSorted+1] = arr[iSorted]
+                if iSorted==0:
+                    arr[0] = val
+            else:
+                arr[iSorted+1] = val    
+                break
+    return arr
+```
+* Time complexity: O(n^2) (the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
+* Space complexity: in-place
