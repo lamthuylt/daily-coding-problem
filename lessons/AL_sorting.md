@@ -2,7 +2,7 @@
 
 ## Bubble sort
 
-#### Definition
+#### Algorithm
 This algorithm consists in repeatedly scanning through the list, comparing each pair of adjacent elements, and swapping them if they are in the wrong order. By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the list is sorted. 
 
 #### Illustration
@@ -37,7 +37,7 @@ def bubble_sort(arr):
 
 ## Selection sort
 
-#### Definition
+#### Algorithm
 This algorithm divides the list into 2 sublists: one sublist of already sorted elements, which is built up from left to right, and one sublist of remaining elements to be sorted. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest element of the unsorted sublist, swapping it with the left most element of the unsorted sublist, and moving the sublist boundary one element to the right.
 
 #### Illustration
@@ -50,7 +50,7 @@ This algorithm divides the list into 2 sublists: one sublist of already sorted e
 ```python
 def selection_sort(arr):
     ''' O(n^2) '''
-    # move the sorted-unsorted sublists boundary one element to the right at the time
+    # move the sorted-unsorted sublists boundary one element to the right at a time
     for i in range(len(arr)-1):                   
         # find index of minimum element of unsorted sublist
         iMin = i
@@ -74,10 +74,13 @@ def selection_sort(arr):
 
 ## Insertion sort
 
+#### Algorithm
+Insertion sort also divides the list into 2 sublists: sorted sublist, which initially contains the first element in the list and is built up from left to right, and unsorted sublist, which contains initially the remaining elements. The algorithm proceeds by picking one element from the unsorted sublist at a time, finding the location it belongs within the sorted sublist, and inserting it there. The procedure repeats until the unsorted sublist is empty.  
+
 #### Illustration
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" alt="{{ include description }}">
-  figure source: https://en.wikipedia.org/wiki/Insertion_sort
+  The sorted sublist (black) initially contains the first element in the list. With each iteration, one element (red) is picked from the unsorted sublist and inserted inplace into the sorted sublist (source: https://en.wikipedia.org/wiki/Insertion_sort)
 </figure>
 
 #### Implementation
@@ -97,7 +100,7 @@ def insertion_sort(arr):
                 break
     return arr
 ```
+
 #### Analyse
-* Time complexity: O(n^2) 
-(the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
+* Time complexity: O(n^2) (the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
 * Space complexity: in-place
