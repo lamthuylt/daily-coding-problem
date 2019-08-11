@@ -5,10 +5,10 @@
 #### Definition
 This algorithm consists in repeatedly scanning through the list, comparing each pair of adjacent elements, and swapping them if they are in the wrong order. By this way, larger/smaller elements bubble up to the top of the list, which is the origin of the name "Bubble sort". This procedure is repeated until no more swap is required, meaning that the list is sorted. 
 
-#### Example
+#### Illustration
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt="{{ include description }}">
-  Figure: Red is current pair of adjacent elements. Black is sorted sub-list. (source: https://en.wikipedia.org/wiki/Bubble_sort)
+  Red is current pair of adjacent elements. Black is sorted sublist. (source: https://en.wikipedia.org/wiki/Bubble_sort)
 </figure>
 
 #### Implementation
@@ -37,20 +37,27 @@ def bubble_sort(arr):
 
 ## Selection sort
 
+#### Definition
+This algorithm divides the list into 2 sublists: one sublist of already sorted elements, which is built up from left to right, and one sublist of remaining elements to be sorted. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest element of the unsorted sublist, swapping it with the left most element of the unsorted sublist, and moving the sublist boundary one element to the right.
+
+#### Illustration
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif" alt="{{ include description }}">
-  Figure: Red is current min. Yellow is sorted list. Blue is current item. (source: https://en.wikipedia.org/wiki/Selection_sort)
+  Red is current min. Yellow is sorted list. Blue is current item. (source: https://en.wikipedia.org/wiki/Selection_sort)
 </figure>
 
+#### Implementation
 ```python
 def selection_sort(arr):
+    ''' O(n^2) '''
+    # move the sorted-unsorted sublists boundary one element to the right at the time
     for i in range(len(arr)-1):                   
-        # find index of minimum element from i till n-1
+        # find index of minimum element of unsorted sublist
         iMin = i
         for j, num in enumerate(arr[i+1:]):                
             if num < arr[iMin]:
                 iMin = i+j+1
-        # swap ith element and minimum element 
+        # swap minimum element with the unsorted left most element
         if iMin != i:
             temp = arr[i]
             arr[i] = arr[iMin]
@@ -59,6 +66,7 @@ def selection_sort(arr):
     return arr
 ```
 
+#### Analyse
 * Time complexity: O(n^2)
 * Space complexity: in-place
 
@@ -66,11 +74,13 @@ def selection_sort(arr):
 
 ## Insertion sort
 
+#### Illustration
 <figure class="image">
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" alt="{{ include description }}">
   figure source: https://en.wikipedia.org/wiki/Insertion_sort
 </figure>
 
+#### Implementation
 ```python
 def insertion_sort(arr):
     ''' O(n^2) '''
@@ -87,5 +97,7 @@ def insertion_sort(arr):
                 break
     return arr
 ```
-* Time complexity: O(n^2) (the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
+#### Analyse
+* Time complexity: O(n^2) 
+(the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
 * Space complexity: in-place
