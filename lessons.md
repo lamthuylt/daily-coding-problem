@@ -1,4 +1,4 @@
-# Data structures
+## Data structures
 
 ### Trees
 [//]: # (Binary tree)
@@ -12,7 +12,7 @@
 [//]: #https://medium.com/@kojinoshiba/data-structures-in-python-series-2-stacks-queues-8e2a1703d67b
 
 
-# Algorithms
+## Algorithms
 
 ### [Sorting](lessons/A_sorting.md)
 - [x] [Bubble sort](lessons/A_sorting.md#bubble-sort)
