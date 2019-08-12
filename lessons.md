@@ -1,7 +1,7 @@
 # Data structures
 
 ### Trees
-[//]: #Binary tree
+[//]: # (Binary tree)
 
 ### Graphs
 
