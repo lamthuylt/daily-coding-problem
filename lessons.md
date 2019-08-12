@@ -1,7 +1,7 @@
 # Data structures
 
 ### Trees
-[//]: #- [ ] Binary tree
+[//]: #Binary tree
 
 ### Graphs
 
@@ -14,8 +14,8 @@
 
 # Algorithms
 
-### [Sorting](lessons/AL_sorting.md)
-- [x] [Bubble sort](lessons/AL_sorting.md#bubble-sort)
-- [x] [Selection sort](lessons/AL_sorting.md#selection-sort)
-- [x] [Insertion sort](lessons/AL_sorting.md#insertion-sort)
-- [x] [Merge sort](lessons/AL_sorting.md#merge-sort)
+### [Sorting](lessons/A_sorting.md)
+- [x] [Bubble sort](lessons/A_sorting.md#bubble-sort)
+- [x] [Selection sort](lessons/A_sorting.md#selection-sort)
+- [x] [Insertion sort](lessons/A_sorting.md#insertion-sort)
+- [x] [Merge sort](lessons/A_sorting.md#merge-sort)
