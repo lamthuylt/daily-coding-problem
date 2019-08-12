@@ -29,9 +29,9 @@ def bubble_sort(arr):
     return arr
 ```
 
-#### Analyse
+#### Analysis
 * Time complexity: O(n^2)
-* Space complexity: in-place
+* Space complexity: O(1)
  
 
 
@@ -66,9 +66,9 @@ def selection_sort(arr):
     return arr
 ```
 
-#### Analyse
+#### Analysis
 * Time complexity: O(n^2)
-* Space complexity: in-place
+* Space complexity: O(1)
 
 
 
@@ -101,6 +101,58 @@ def insertion_sort(arr):
     return arr
 ```
 
-#### Analyse
-* Time complexity: O(n^2) (the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
-* Space complexity: in-place
+#### Analysis
+* Time complexity: O(n^2) 
+..*(the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
+* Space complexity: O(1) 
+
+
+## Merge sort
+
+#### Algorithm
+This algorithm is broken down into 2 sub-problems as follow:
+1. Bottom up split: divide the input list into 2 (relatively) equal sublists (left and right), then repeat the splitting process on each sublist over again until each sublist contains one element (a list of one element is considered sorted).
+2. Top down merge: repeatedly merge sublists to produce new sorted sublists until there is only one sorted sublist remaining. This will be the original list in sorted order.
+
+#### Illustration
+<figure class="image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt="{{ include description }}">
+  First divide the list into sublists of one element. Then compare each element of adjacent sublists to sort and merge the two adjacent sublists, and repeat this process until all the sublists are sorted and merged. (source: https://en.wikipedia.org/wiki/Merge_sort)
+</figure>
+
+#### Implementation
+```python
+def merge(L,R):
+    # merge two sorted sublists (left and right) into one sorted list
+    nL = len(L)
+    nR = len(R)
+    A = []
+    i = j = 0
+    # compare each pair of element of the two sublists to sort and merge them 
+    while i<nL and j<nR:
+        if L[i] <= R[j]:
+            A.append(L[i])
+            i += 1
+        else:
+            A.append(R[j])
+            j += 1
+    # when one sublist exhausts first, fill A with all the remaining elements of the other sublist
+    if i == nL:
+        A.extend(R[j:])
+    elif j == nR:                
+        A.extend(L[i:])        
+    return A   
+        
+def merge_sort(A):
+    n = len(A)
+    if n <= 1:
+        return A
+    else:
+        mid = int(n/2)
+        L = merge_sort(A[:mid])
+        R = merge_sort(A[mid:])
+        return merge(L,R)
+```
+
+#### Analysis
+* Time complexity: O(nLogn)
