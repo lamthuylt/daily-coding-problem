@@ -1,14 +1,14 @@
 ## Data structures
 
 ### Trees
-[//]: # (Binary tree)
+- [ ] Binary tree
 
-### Graphs
+[//]: # (### Graphs)
 
-### Linked lists
+[//]: # (### Linked lists)
 [//]: #https://medium.com/@kojinoshiba/data-structures-in-python-series-1-linked-lists-d9f848537b4d
 
-### Stacks and queues
+[//]: # (### Stacks and queues)
 [//]: #https://medium.com/@kojinoshiba/data-structures-in-python-series-2-stacks-queues-8e2a1703d67b
 
 
