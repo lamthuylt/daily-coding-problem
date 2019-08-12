@@ -102,17 +102,16 @@ def insertion_sort(arr):
 ```
 
 #### Analysis
-* Time complexity: O(n^2) 
-..*(the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
+* Time complexity: O(n^2) (the number of comparisons and shifts of insertion sort is much less than bubble sort and selection sort)
 * Space complexity: O(1) 
 
 
 ## Merge sort
 
 #### Algorithm
-This algorithm is broken down into 2 sub-problems as follow:
-1. Bottom up split: divide the input list into 2 (relatively) equal sublists (left and right), then repeat the splitting process on each sublist over again until each sublist contains one element (a list of one element is considered sorted).
-2. Top down merge: repeatedly merge sublists to produce new sorted sublists until there is only one sorted sublist remaining. This will be the original list in sorted order.
+This algorithm is broken down into 2 steps as follow:
+*1. Bottom up split*: divide the input list into 2 (relatively) equal sublists (left and right), then repeat the splitting process on each sublist over again until each sublist contains one element (a list of one element is considered sorted).
+*2. Top down merge*: repeatedly merge sublists to produce new sorted sublists until there is only one sorted sublist remaining. This will be the original list in sorted order.
 
 #### Illustration
 <figure class="image">
