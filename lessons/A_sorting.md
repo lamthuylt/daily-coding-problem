@@ -110,8 +110,8 @@ def insertion_sort(arr):
 
 #### Algorithm
 This algorithm is broken down into 2 steps as follow:
-*1. Bottom up split*: divide the input list into 2 (relatively) equal sublists (left and right), then repeat the splitting process on each sublist over again until each sublist contains one element (a list of one element is considered sorted).
-*2. Top down merge*: repeatedly merge sublists to produce new sorted sublists until there is only one sorted sublist remaining. This will be the original list in sorted order.
+1. **Bottom up split**: divide the input list into 2 (relatively) equal sublists (left and right), then repeat the splitting process on each sublist over again until each sublist contains one element (a list of one element is considered sorted).
+2. **Top down merge**: repeatedly merge sublists to produce new sorted sublists until there is only one sorted sublist remaining. This will be the original list in sorted order.
 
 #### Illustration
 <figure class="image">
