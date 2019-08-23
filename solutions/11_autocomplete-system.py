@@ -35,8 +35,8 @@ Data structure #2: Tree
      "g"    "e"  "a"
     /       /     \
  "dog"    "r"     "l"
-         /         \
-      "deer"     "deal"
+         /          \
+      "deer"      "deal"
 """
 suggestions = []
 
