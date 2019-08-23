@@ -56,8 +56,10 @@ class Node:
 
         if flag_exist == False:
             self.children.append(Node(remaining[0]))
+            # add child node containing each character of remaining            
             if len(remaining[1:]) >= 1:  
                 self.children[-1].add(remaining[1:], word)
+            # add child node containing the whole word to the end of each branch 
             if len(remaining[1:]) == 0:
                 self.children[-1].children.append(Node(word))
 
