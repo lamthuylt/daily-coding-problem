@@ -9,7 +9,7 @@
 - [x] [#8 Count unival subtrees](#problem-8-easy) [[solution]](solutions/8_count-unival-subtrees.py)
 - [ ] [#9 Largest non adjacent sum](#problem-9-hard)
 - [ ] [#10](#problem-10-medium)
-- [ ] [#11](#problem-11-medium) 
+- [x] [#11](#problem-11-medium) [[solution]](solutions/11_autocomplete-system.py)
 - [ ] [#12](#problem-12-hard) 
 
 
