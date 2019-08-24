@@ -13,8 +13,8 @@
 - [ ] [#12](#problem-12-hard) 
 - [ ] [#13](#problem-13-hard) 
 - [x] [#14 Estimate pi using Monte Carlo method](#problem-14-medium) [[solution]](solutions/14_estimate-pi-Monte-Carlo.py)
-- [ ] [#15](#problem-15-medium) 
-- [ ] [#16](#problem-16-easy) 
+- [ ] [#15](#problem-15-medium)
+- [x] [#16 Record orders in a log](#problem-16-easy) [[solution]](solutions/16_order-log.py)
 - [ ] [#17](#problem-17-hard) 
 
 
