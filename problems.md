@@ -12,7 +12,7 @@
 - [x] [#11 Autocomplete system](#problem-11-medium) [[solution]](solutions/11_autocomplete-system.py)
 - [ ] [#12](#problem-12-hard) 
 - [ ] [#13](#problem-13-hard) 
-- [ ] [#14](#problem-14-medium) 
+- [ ] [#14 Estimate pi using Monte Carlo method](#problem-14-medium) [[solution]](solutions/14_estimate-pi-Monte-Carlo.py)
 - [ ] [#15](#problem-15-medium) 
 - [ ] [#16](#problem-16-easy) 
 - [ ] [#17](#problem-17-hard) 
