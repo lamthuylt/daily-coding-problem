@@ -38,58 +38,10 @@ def lowest_positive_missing_2(arr):
         index += 1        
     return missing
 
+
 '''
-Sorting algorithms
+Merge sort
 '''
-
-def bubble_sort(A): 
-    ''' O(n^2) '''
-    for k in range(len(A)-1,0,-1):       
-        flag = 1   
-        # swap each pair of adjacent elements if they are not in increasing order
-        for i in range(k):
-            if A[i] > A[i+1]:   
-                temp = A[i]
-                A[i] = A[i+1]
-                A[i+1] = temp
-                flag = 0
-        # if we go through a pass without swapping, the array is already sorted
-        if flag == 1:               
-            break
-    return A
-
-def selection_sort(A):
-    ''' O(n^2) '''
-    # move the sorted-unsorted sublists boundary one element to the right at a time
-    for i in range(len(A)-1):                   
-        # find index of minimum element of unsorted sublist
-        iMin = i
-        for j, num in enumerate(A[i+1:]):                
-            if num < A[iMin]:
-                iMin = i+j+1
-        # swap minimum element with the unsorted left most element
-        if iMin != i:
-            temp = A[i]
-            A[i] = A[iMin]
-            A[iMin] = temp
-        print(A)
-    return A
-
-def insertion_sort(A):
-    ''' O(n^2) '''
-    for iUnsorted in range(1,len(A)):
-        val = A[iUnsorted]   
-        for iSorted in range(iUnsorted-1, -1, -1):
-            # shift numbers greater than val to the right
-            if A[iSorted] > val:
-                A[iSorted+1] = A[iSorted]
-                if iSorted==0:
-                    A[0] = val
-            else:
-                A[iSorted+1] = val    
-                break
-    return A
-
 def merge(L,R):
     # merge two sorted sublists (Left and Right) into one sorted list
     nL = len(L)
