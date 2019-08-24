@@ -49,7 +49,6 @@ This algorithm divides the list into 2 sublists: one sublist of already sorted e
 #### Implementation
 ```python
 def selection_sort(arr):
-    ''' O(n^2) '''
     # move the sorted-unsorted sublists boundary one element to the right at a time
     for i in range(len(arr)-1):                   
         # find index of minimum element of unsorted sublist
@@ -86,7 +85,6 @@ Insertion sort divides the list into 2 sublists: sorted sublist, which initially
 #### Implementation
 ```python
 def insertion_sort(arr):
-    ''' O(n^2) '''
     for iUnsorted in range(1,len(arr)):
         val = arr[iUnsorted]   
         for iSorted in range(iUnsorted-1, -1, -1):
@@ -110,7 +108,7 @@ def insertion_sort(arr):
 
 #### Algorithm
 This algorithm is broken down into 2 steps as follow:
-1. **Bottom up split**: divide the input list into 2 (relatively) equal sublists (left and right), then repeat the splitting process on each sublist over again until each sublist contains one element (a list of one element is considered sorted).
+1. **Bottom up split**: divide the input list into 2 (almost) equal sublists - left and right, then repeat the splitting process on each sublist over again until each sublist contains one element (a list of one element is considered sorted).
 2. **Top down merge**: repeatedly merge sublists to produce new sorted sublists until there is only one sorted sublist remaining. This will be the original list in sorted order.
 
 #### Illustration
@@ -122,7 +120,7 @@ This algorithm is broken down into 2 steps as follow:
 #### Implementation
 ```python
 def merge(L,R):
-    # merge two sorted sublists (left and right) into one sorted list
+    # merge two sorted sublists (Left and Right) into one sorted list
     nL = len(L)
     nR = len(R)
     A = []
@@ -155,3 +153,4 @@ def merge_sort(A):
 
 #### Analysis
 * Time complexity: O(nLogn)
+* Space complexity: O(n) (suppose that )
