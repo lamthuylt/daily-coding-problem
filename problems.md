@@ -16,6 +16,7 @@
 - [ ] [#15 Random pick from out of memory stream](#problem-15-medium)
 - [x] [#16 Record orders in a log](#problem-16-easy) [[solution]](solutions/16_order-log.py)
 - [ ] [#17](#problem-17-hard) 
+- [ ]
 
 
 # Problem description
