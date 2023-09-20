@@ -1,4 +1,3 @@
-# Repository organisation
 This repository contains our solutions for [Daily Coding Problem](https://www.dailycodingproblem.com/), written in **Python**.
 
 The repository is organised as follow: 
